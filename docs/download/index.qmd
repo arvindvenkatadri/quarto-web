@@ -21,6 +21,10 @@ image: /images/hero_right.png
 listing:
   id: download-older
   contents: 
+    - id: version11
+      title: v1.1.189
+      date: 2022/09/04
+      path: https://github.com/quarto-dev/quarto-cli/releases/tag/v1.1.189
     - id: version10
       title: v1.0.38
       date: 2022/08/04
@@ -40,32 +44,7 @@ listing:
 ---
 
 
-::: {.content-visible when-profile="rc"}
 
-::: {.panel-tabset}
-
-## **{{< meta prerelease-title >}}** --- v[]{.download-pre-version}
-
-{{< include _download-pre.md >}}
-
-
-## **Current Release** --- v[]{.download-version}
-
-{{< include _download.md >}}
-
-## **Older Releases**
-
-Pages containing all installers for the most recent releases of older versions of Quarto are linked below.
-
-:::{#download-older}
-
-:::
-
-:::
-
-:::
-
-::: {.content-hidden when-profile="rc"}
 
 ::: {.panel-tabset}
 
@@ -73,7 +52,10 @@ Pages containing all installers for the most recent releases of older versions o
 
 {{< include _download.md >}}
 
-## **{{< meta prerelease-title >}}** --- v[]{.download-pre-version}
+<!-- this used to be {{< meta prerelease-title >}} but the change to custom AST nodes means
+     that tabset titles are not expanded in time. We hardcode it here for now. -->
+
+## **Pre-release** --- v[]{.download-pre-version}
 
 {{< include _download-pre.md >}}
 
@@ -87,7 +69,6 @@ Pages containing all installers for the most recent releases of older versions o
 
 :::
 
-:::
 
 
 
