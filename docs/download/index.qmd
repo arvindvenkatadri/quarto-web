@@ -24,7 +24,7 @@ listing:
     - id: version10
       title: v1.0.38
       date: 2022/08/04
-      path: https://github.com/quarto-dev/quarto-cli/releases/tag/v1.0.38
+      path: "https://github.com/quarto-dev/quarto-cli/releases/tag/v1.0.38"
   fields: 
     - title
     - date
